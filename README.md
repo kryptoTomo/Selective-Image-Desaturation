@@ -1,2 +1,2 @@
 # Selective Image Desaturation
-Projekt wykonany na zajęcia z "Podstaw Grafiki Komputerowej". Więcej informacji na temat projektu w folderze DOC.
+Project made for the "Basics of Computer Graphics" classes. More information about the project in the DOC folder.
