@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Options</class>
+ <widget class="QDialog" name="Options">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>271</width>
+    <height>363</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="16" column="0">
+    <widget class="QProgressBar" name="progressBar_3">
+     <property name="maximum">
+      <number>30</number>
+     </property>
+     <property name="value">
+      <number>0</number>
+     </property>
+     <property name="format">
+      <string>%v</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0" alignment="Qt::AlignHCenter">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Saturation [%]</string>
+     </property>
+    </widget>
+   </item>
+   <item row="13" column="0" alignment="Qt::AlignHCenter">
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>Set Blur</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="0" alignment="Qt::AlignHCenter">
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>Set Value</string>
+     </property>
+    </widget>
+   </item>
+   <item row="14" column="0">
+    <widget class="QScrollBar" name="blur">
+     <property name="maximum">
+      <number>30</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="22" column="0">
+    <widget class="QPushButton" name="close">
+     <property name="text">
+      <string>Close</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0">
+    <widget class="Line" name="line">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <widget class="QProgressBar" name="progressBar">
+     <property name="value">
+      <number>0</number>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="0">
+    <widget class="QProgressBar" name="progressBar_2">
+     <property name="maximum">
+      <number>255</number>
+     </property>
+     <property name="value">
+      <number>0</number>
+     </property>
+     <property name="format">
+      <string>%v</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QLabel" name="label_4">
+     <property name="text">
+      <string>                            Saturation point</string>
+     </property>
+    </widget>
+   </item>
+   <item row="21" column="0">
+    <widget class="Line" name="line_5">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QComboBox" name="typeSat">
+     <item>
+      <property name="text">
+       <string>Lightness</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Color Value(Hue) </string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>ColorRed</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>ColorGreen</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>ColorBlue</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Color Cyan</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Color Magenta</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Color Yellow</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="11" column="0">
+    <widget class="Line" name="line_2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="0">
+    <widget class="QScrollBar" name="treshold">
+     <property name="maximum">
+      <number>255</number>
+     </property>
+     <property name="pageStep">
+      <number>10</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QScrollBar" name="saturation">
+     <property name="maximum">
+      <number>100</number>
+     </property>
+     <property name="pageStep">
+      <number>10</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="Line" name="line_3">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>saturation</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>progressBar</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>85</x>
+     <y>64</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>83</x>
+     <y>95</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>treshold</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>progressBar_2</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>111</x>
+     <y>150</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>112</x>
+     <y>171</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>blur</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>progressBar_3</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>199</x>
+     <y>229</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>196</x>
+     <y>249</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
