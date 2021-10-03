@@ -31,4 +31,4 @@ Preparation of Sardana
   * download and put controller EncoderMotorController.py in separate folder, 
   * in Jive go to Pool device in Sardana server and add PoolPath property to it, with the folder path
   * reset sardana server
-3.
+
