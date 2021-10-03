@@ -22,12 +22,12 @@ To install scangui use installator setup.py
 
 Preparation of Sardana
 -----------------------
-To run Pool and MacroServer tango servers follow these commands:
+- To run Pool and MacroServer tango servers follow these commands:
 
     Pool <system-name>
     MacroServer <system-name>
     
-To connect the custom EncoderMotorController follow these steps:
+Connect the custom EncoderMotorController:
 * download and put controller EncoderMotorController.py in separate folder, 
 * in Jive go to Pool device in Sardana server and add PoolPath property to it, with the folder path
 * reset sardana server
