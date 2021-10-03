@@ -3,7 +3,7 @@ cinel phymotion testing automation
 
 INFORMATION
 -----------
-To start the environment, you should make first few steps:
+To start the scangui, make first few steps:
 * installation Conda & Sardana, 
 * running tango Pool and MacroServer
 * installation scangui
@@ -26,3 +26,8 @@ To run Pool and MacroServer tango servers follow these commands:
 
     Pool <system-name>
     MacroServer <system-name>
+    
+To connect the custom EncoderMotorController follow these steps:
+* download and put controller EncoderMotorController.py in separate folder, 
+* in Jive go to Pool device in Sardana server and add PoolPath property to it, with the folder path
+* reset sardana server
