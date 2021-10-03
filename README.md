@@ -18,10 +18,10 @@ To install Sardana package paste:
 
     conda install -c conda-forge sardana
 
-To run Pool and MacroServer tango servers follow these steps:
+To run Pool and MacroServer tango servers follow these commands:
 
-    Pool <system name>
-    MacroServer <system name>
+    * Pool <system name>
+    * MacroServer <system name>
 
 Now 
 Launch the gui by using the launcher in the menu or by running
