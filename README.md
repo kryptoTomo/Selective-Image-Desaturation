@@ -11,6 +11,7 @@ To start the environment, you should make first few steps:
 INSTALLATION
 ------------
 Conda is an open source package management system and environment management system. Thanks to Conda we will install Sardana. 
+
 From https://docs.conda.io/en/latest/miniconda.html download installer and then run it.
 To install Sardana package paste:
 
