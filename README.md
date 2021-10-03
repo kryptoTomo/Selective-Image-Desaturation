@@ -18,22 +18,11 @@ To install Sardana package paste:
 
     conda install -c conda-forge sardana
 
+To install scangui use installator setup.py
+
+Preparation of Sardana
+-----------------------
 To run Pool and MacroServer tango servers follow these commands:
 
-    * Pool <system name>
-    * MacroServer <system name>
-
-Now 
-Launch the gui by using the launcher in the menu or by running
-
-    scangui
-
-If not configured the gui asks for input:
-* Lists of motors to be scanned. If left empty the GUI will dynamically get all motors from sardana.
-* Path to where the sardana .h5 files are accessible for the client
-* Macroserver/Door
-
-If the sardana jsonrecorder is not enabled the GUI will ask you if it should enable it for you.
-
-The config files are stored in  ~/.config/MAXIV/scangui.ini
-
+    Pool <system-name>
+    MacroServer <system-name>
