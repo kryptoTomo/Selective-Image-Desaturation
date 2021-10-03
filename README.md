@@ -24,8 +24,8 @@ Preparation of Sardana
 -----------------------
 1. Run Pool and MacroServer tango servers using these commands:
 
-    Pool <system-name>
-    MacroServer <system-name>
+        Pool <system-name>
+        MacroServer <system-name>
     
 2. Connect the custom EncoderMotorController:
   * download and put controller EncoderMotorController.py in separate folder, 
